@@ -11,7 +11,7 @@
 To install, run:
 
 ```sh
-npm instal
+npm install
 ```
 
 ## Launch

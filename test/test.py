@@ -123,5 +123,5 @@ if __name__ == '__main__':
     for test_name in reports:
         print(test_name)
         for component in reports[test_name]:
-            print(json.dumps(reports[test_name][component], indent=4))
+            print(component, json.dumps(reports[test_name][component], indent=4))
     

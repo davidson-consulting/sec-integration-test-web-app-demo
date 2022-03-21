@@ -1,5 +1,5 @@
 {
-  "name": "toy-webapp",
+  "name": "toy-webapp-backend",
   "version": "0.0.1",
   "description": "Toy WebApp backend to show-off SEC's measurements of integration test",
   "author": "benjamin.danglot@davidson.fr",

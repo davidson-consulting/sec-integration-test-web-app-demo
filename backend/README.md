@@ -2,7 +2,11 @@
 
 ## Prerequisite
 
-You need [sqlite3]() installed, then create the database:
+- [npm and NodeJS](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+- [NestJS](https://docs.nestjs.com/)
+- port `3000` to be free of use
+
+You need [sqlite3](https://www.sqlite.org/index.html) installed, then create the database:
 
 ```sh
 $ squite3 mydatabase.db
@@ -20,7 +24,7 @@ Then `Ctrl-D` to leave.
 To install, run:
 
 ```sh
-npm instal
+npm install
 ```
 
 ## Launch

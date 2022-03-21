@@ -120,8 +120,4 @@ if __name__ == '__main__':
             reports[test_name] =  json.loads(report_file.read())
 
     end(driver)
-    for test_name in reports:
-        print(test_name)
-        for component in reports[test_name]:
-            print(component, json.dumps(reports[test_name][component], indent=4))
-    
+    print(json.dumps(reports, indent=4))

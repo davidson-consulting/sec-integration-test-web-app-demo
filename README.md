@@ -114,37 +114,40 @@ python3 test.py ${PID_FRONT} ${PID_FRONT_NO_MAT} ${PID_BACK}
 6. You should observe something as follow:
 
 ```json
-test_signup_mat
-frontend {
-    "RAPL_ENERGY_PKG": 185310380032,
-    "INSTRUCTIONS_RETIRED": 126235294,
-    "LLC_MISSES": 2247305,
-    "CYCLES": 137909923,
-    "duration": 58209299
+{
+    "test_signup_mat": {
+        "frontend": {
+            "RAPL_ENERGY_PKG": 296594964480,
+            "INSTRUCTIONS_RETIRED": 78087570,
+            "LLC_MISSES": 1653978,
+            "CYCLES": 71570116,
+            "duration": 57839717
+        },
+        "backend": {
+            "RAPL_ENERGY_PKG": 296551972864,
+            "INSTRUCTIONS_RETIRED": 22185041,
+            "LLC_MISSES": 924623,
+            "CYCLES": 36868305,
+            "duration": 17991511
+        }
+    },
+    "test_signup_no_mat": {
+        "frontend": {
+            "RAPL_ENERGY_PKG": 482186100736,
+            "INSTRUCTIONS_RETIRED": 61227821,
+            "LLC_MISSES": 1530793,
+            "CYCLES": 71326845,
+            "duration": 35913654
+        },
+        "backend": {
+            "RAPL_ENERGY_PKG": 482186100736,
+            "INSTRUCTIONS_RETIRED": 21502872,
+            "LLC_MISSES": 889942,
+            "CYCLES": 39302713,
+            "duration": 14811585
+        }
+    }
 }
-backend {
-    "RAPL_ENERGY_PKG": 185316147200,
-    "INSTRUCTIONS_RETIRED": 130457220,
-    "LLC_MISSES": 1669573,
-    "CYCLES": 147485352,
-    "duration": 50488289
-}
-test_signup_no_mat
-frontend {
-    "RAPL_ENERGY_PKG": 631917510656,
-    "INSTRUCTIONS_RETIRED": 110773299,
-    "LLC_MISSES": 2114575,
-    "CYCLES": 126470839,
-    "duration": 65413293
-}
-backend {
-    "RAPL_ENERGY_PKG": 631910170624,
-    "INSTRUCTIONS_RETIRED": 24929220,
-    "LLC_MISSES": 885179,
-    "CYCLES": 42746497,
-    "duration": 12868914
-}
-
 ```
 
 Where:

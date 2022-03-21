@@ -1,0 +1,16 @@
+<table>
+  <tr>
+    <th> id </th>
+    <th> Lastname </th>
+    <th> Firstname </th>
+    <th> Age </th>
+  </tr>
+  <ng-container *ngFor="let user of this.dataSource">
+    <tr>
+      <td> {{user.id}} </td>
+      <td> {{user.lastname}} </td>
+      <td> {{user.firstname}} </td>
+      <td> {{user.age}} </td>
+    </tr>
+  </ng-container>
+</table>

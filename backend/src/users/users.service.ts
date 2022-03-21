@@ -33,6 +33,11 @@ export class UsersService {
         return this.repository.findOne( { id: Equal(id) } );
     }
 
+    // we consider the lastname as username
+    async getByUsername(username: string): Promise<User> {
+        return this.repository.findOne( { lastname: Equal(username) } );
+    }
+
     async update(id: number, firstname: string, lastname: string, age: number): Promise<User> {
         const userToUpdate: User = await this.getById(id);
         if (firstname !== undefined) {

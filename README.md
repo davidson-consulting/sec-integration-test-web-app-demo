@@ -7,6 +7,8 @@ In this scenario, we will measure the energy consumption of one backend that is 
 
 The integration are the same for both frontends implemented as a python script using selenium, see: [test.py](./test/test.py)
 
+![demo.gif](./demo.gif)
+
 ## Prerequisite
 
 - [npm and NodeJS](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)

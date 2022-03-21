@@ -1,14 +1,43 @@
-<mat-card>
-  <div>
-    <label for="lastname">lastname</label>
-    <input type="text" id="lastname" placeholder="lastname" />
+<div class="container" style="text-align: center;">
+  <mat-card>
+    <mat-card-title fxLayoutAlign="center center">SignUp&nbsp;<i class="material-icons">
+        perm_identity
+      </i></mat-card-title>
+    <div fxLayout="column" fxLayoutAlign="space-around center">
 
-    <label for="firstname">firstname</label>
-    <input type="text" id="firstname" placeholder="firstname" />
+      <div>
+        <mat-form-field>
+          <mat-label>Lastname</mat-label>
+          <input type="text" id="lastname" matInput placeholder="Lastname" />
+        </mat-form-field>
+      </div>
 
-    <label for="age">age</label>
-    <input type="text" id="age" placeholder="age" />
+      <div>
+        <mat-form-field>
+          <mat-label>Firstname</mat-label>
+          <input type="text" id="firstname" matInput placeholder="Firstname" />
+        </mat-form-field>
+      </div>
 
-    <a (click)="signup()"><button id="signup_button">SignUp</button></a>
-  </div>
-</mat-card>
+      <div>
+        <mat-form-field>
+          <mat-label>Age</mat-label>
+          <input type="text" id="age" matInput placeholder="Age" />
+        </mat-form-field>
+      </div>
+
+      <div>
+        <mat-form-field>
+          <mat-label>Password</mat-label>
+          <input type="password" id="password" matInput placeholder="password" />
+          <mat-icon matSuffix>lock</mat-icon>
+        </mat-form-field>
+      </div>
+
+      <div fxLayout="row" fxLayoutAlign="space-evenly none"> 
+        <a (click)="signup()"><button mat-raised-button color="primary" id="signup_button" style="margin-right: 5px;">SignUp</button></a>
+        <a (click)="back()"><button mat-raised-button color="primary" id="back_button" style="margin-right: 5px;">Back</button></a>
+      </div>
+    </div>
+  </mat-card>
+</div>

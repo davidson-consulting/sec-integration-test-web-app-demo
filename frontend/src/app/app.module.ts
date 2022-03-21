@@ -7,11 +7,9 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { LoginComponent } from './login/login.component';
 import { UsersListComponent } from './users-list/users-list.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
-import { MatTableModule } from '@angular/material/table'; 
-import { MatSortModule } from '@angular/material/sort';
 import { TokenHttpInterceptor } from './interceptors/token.interceptor';
 import { SignupComponent } from './signup/signup.component';
+import { MaterialModule } from './material/material.module';
 
 @NgModule({
   declarations: [
@@ -25,8 +23,7 @@ import { SignupComponent } from './signup/signup.component';
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    MatTableModule,
-    MatSortModule,
+    MaterialModule,
   ],
   providers: [
     {

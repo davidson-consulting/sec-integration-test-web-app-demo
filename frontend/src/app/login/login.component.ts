@@ -23,7 +23,10 @@ export class LoginComponent implements OnInit {
     const username: string = (document.getElementById('username') as HTMLInputElement).value;
     const password: string = (document.getElementById('password') as HTMLInputElement).value;
     this.api.post({endpoint: '/auth/login', data: { username, password },})
-      .then(response => this.tokenStorageService.save(response.access_token));
+      .then(response => {
+        this.tokenStorageService.save(response.access_token);
+        this.router.navigate(['/users']);
+      });
   }
   
   signup() {

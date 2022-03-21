@@ -27,6 +27,11 @@ export class SignupComponent implements OnInit {
       data: {
         lastname, firstname, age
       }
-    }).then(response => this.router.navigate(['/users']));
+    }).then(response => this.router.navigate(['/login']));
+  }
+  
+  back(): void {
+    console.log('back');
+    this.router.navigate(['login']);
   }
 }
